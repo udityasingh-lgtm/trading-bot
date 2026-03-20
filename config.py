@@ -5,7 +5,7 @@ CONFIG = {
     "testnet": True,
 
     # Trading
-    "symbols":  ["SOLUSDT"],
+    "symbols":  ["BTCUSDT"],
     "interval": "1m",
 
     # Risk
