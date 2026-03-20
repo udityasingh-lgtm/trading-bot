@@ -12,9 +12,7 @@ CONFIG = {
 
     # ── Multiple Trading Pairs ────────────────────────────
     "symbols": [
-        "SOLUSDT",    # Solana  - very active, lots of signals
-        "BTCUSDT",    # BTC     - cheap and volatile
-        "BNBUSDT",    # BNB     - stable and reliable
+        "SOLUSDT",    # BNB     - stable and reliable
     ],
 
     # ── Candle Interval ───────────────────────────────────
