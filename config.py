@@ -13,7 +13,7 @@ CONFIG = {
     # ── Multiple Trading Pairs ────────────────────────────
     "symbols": [
         "SOLUSDT",    # Solana  - very active, lots of signals
-        "XRPUSDT",    # XRP     - cheap and volatile
+        "BTCUSDT",    # BTC     - cheap and volatile
         "BNBUSDT",    # BNB     - stable and reliable
     ],
 
