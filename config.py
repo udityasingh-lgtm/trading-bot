@@ -12,7 +12,7 @@ CONFIG = {
 
     # ── Multiple Trading Pairs ────────────────────────────
     "symbols": [
-        "SOLUSDT",    # Solana  - very active, lots of signals
+        "BTCUSDT",    # Solana  - very active, lots of signals
     ],
 
     # ── Candle Interval ───────────────────────────────────
