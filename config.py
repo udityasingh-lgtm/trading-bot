@@ -1,48 +1,25 @@
-"""
-============================================================
-  Bot Configuration v2
-  Technical + News + Fear & Greed
-============================================================
-"""
-
 CONFIG = {
-    # ── API Keys ──────────────────────────────────────────
-    "api_key":    "",   # Leave empty - Railway uses environment variables
-    "api_secret": "",   # Leave empty - Railway uses environment variables
+    # API Keys - leave empty, Railway uses environment variables
+    "api_key":    "",
+    "api_secret": "",
+    "testnet": True,
 
-    # ── Multiple Trading Pairs ────────────────────────────
-    "symbols": [
-        "SOLUSDT",    # BNB     - stable and reliable
-    ],
+    # Trading
+    "symbols":  ["SOLUSDT"],
+    "interval": "1m",
 
-    # ── Candle Interval ───────────────────────────────────
-    "interval": "1m",   # 5 minutes - good balance of speed and accuracy
+    # Risk
+    "risk_pct":           0.95,
+    "stop_loss_pct":      0.3,
+    "take_profit_pct":    0.5,
+    "min_usdt_trade":     5.0,
+    "max_daily_loss_pct": 5.0,
+    "max_trades_per_day": 50,
 
-    # ── Safety ────────────────────────────────────────────
-    "testnet": True,    # True = demo account, False = real money
+    # AI
+    "confidence_threshold":   0.52,   # Lower = more trades
+    "retrain_every_n_cycles": 30,     # Retrain every 30 cycles
 
-    # ── Risk Management ───────────────────────────────────
-    "risk_pct":           0.90,   # Use 90% of per-coin budget
-    "stop_loss_pct":      0.3,    # Stop loss at -3%
-    "take_profit_pct":    0.5,    # Take profit at +5%
-    "max_daily_loss_pct": 10.0,   # Stop if down 10% today
-    "max_trades_per_day": 50,     # Max 10 trades per day
-    "min_usdt_trade":     10.0,   # Minimum $10 per trade
-
-    # ── AI Settings ───────────────────────────────────────
-    "confidence_threshold": 0.62,  # Technical signal threshold
-
-    # ── Timing ────────────────────────────────────────────
-    "sleep_seconds":          30,   # Check every 2 minutes
-    "retrain_every_n_cycles": 100,    # Retrain AI every 50 cycles
+    # Timing
+    "sleep_seconds": 30,
 }
-
-"""
-Signal Weights:
-  Technical Analysis : 50%
-  Fear & Greed Index : 30%
-  News Sentiment     : 20%
-
-BUY when combined score >= 0.25
-SELL when combined score <= -0.25
-"""
