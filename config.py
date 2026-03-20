@@ -14,7 +14,7 @@ CONFIG = {
     "api_secret": "WYWyG7KpFHvC0HbDytyq7UooqvInvbQoZQcvZKJ3G46xyAkdLypbVURizUf1Xo4C",
 
     # ── Trading Pair & Interval ───────────────────────────
-    "symbol":   "BTCUSDT",     # Pair to trade
+    "symbol":   "SOLUSDT",     # Pair to trade
     "interval": "1h",          # Candle interval: 1m, 5m, 15m, 1h, 4h, 1d
 
     # ── Safety: Use Testnet First! ────────────────────────
