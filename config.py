@@ -35,7 +35,7 @@ CONFIG = {
     "confidence_threshold": 0.62,  # Technical signal threshold
 
     # ── Timing ────────────────────────────────────────────
-    "sleep_seconds":          30,   # Check every 2 minutes
+    "sleep_seconds":          33,   # Check every 2 minutes
     "retrain_every_n_cycles": 100,    # Retrain AI every 50 cycles
 }
 
