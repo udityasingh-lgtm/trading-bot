@@ -18,25 +18,25 @@ CONFIG = {
     ],
 
     # ── Candle Interval ───────────────────────────────────
-    "interval": "5m",   # 5 minutes - good balance of speed and accuracy
+    "interval": "1m",   # 5 minutes - good balance of speed and accuracy
 
     # ── Safety ────────────────────────────────────────────
     "testnet": True,    # True = demo account, False = real money
 
     # ── Risk Management ───────────────────────────────────
     "risk_pct":           0.90,   # Use 90% of per-coin budget
-    "stop_loss_pct":      3.0,    # Stop loss at -3%
-    "take_profit_pct":    5.0,    # Take profit at +5%
+    "stop_loss_pct":      0.3,    # Stop loss at -3%
+    "take_profit_pct":    0.5,    # Take profit at +5%
     "max_daily_loss_pct": 10.0,   # Stop if down 10% today
-    "max_trades_per_day": 10,     # Max 10 trades per day
+    "max_trades_per_day": 50,     # Max 10 trades per day
     "min_usdt_trade":     10.0,   # Minimum $10 per trade
 
     # ── AI Settings ───────────────────────────────────────
-    "confidence_threshold": 0.55,  # Technical signal threshold
+    "confidence_threshold": 0.62,  # Technical signal threshold
 
     # ── Timing ────────────────────────────────────────────
-    "sleep_seconds":          120,   # Check every 2 minutes
-    "retrain_every_n_cycles": 50,    # Retrain AI every 50 cycles
+    "sleep_seconds":          30,   # Check every 2 minutes
+    "retrain_every_n_cycles": 100,    # Retrain AI every 50 cycles
 }
 
 """
