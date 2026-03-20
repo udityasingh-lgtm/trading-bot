@@ -7,8 +7,8 @@
 
 CONFIG = {
     # ── API Keys ──────────────────────────────────────────
-    "api_key":    "DoTY2EYdHLuYr0dCvwJO4NPFsu0vICwnKxCF4kgWyINmyWmHzdAovSVulA3xpLq5",   # Leave empty - Railway uses environment variables
-    "api_secret": "WYWyG7KpFHvC0HbDytyq7UooqvInvbQoZQcvZKJ3G46xyAkdLypbVURizUf1Xo4C",   # Leave empty - Railway uses environment variables
+    "api_key":    "",   # Leave empty - Railway uses environment variables
+    "api_secret": "",   # Leave empty - Railway uses environment variables
 
     # ── Multiple Trading Pairs ────────────────────────────
     "symbols": [
